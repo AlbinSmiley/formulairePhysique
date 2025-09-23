@@ -59,6 +59,7 @@
 
 \newcommand{\dx}{ \dee x }
 \newcommand{\dt}{ \dee t }
+\newcommand{\ddt}{\tfrac{\mathrm{d}}{\mathrm{d}t} }
 
 \newcommand{\veca}{\vv{a}}
 \newcommand{\vecb}{\vv{b}}
@@ -391,6 +392,9 @@
   \end{center}
 
   \vspace{-0.4cm}
+  \[
+    \ddt\urho=\dot{\varphi}\uphi \phantom{xxx} \ddt\uphi=-\dot{\varphi}\urho
+  \]
   \begin{IEEEeqnarray*}{rCl}
     \vi
     \begin{cases}
@@ -409,6 +413,13 @@
 
   \subsection{Coordnonnée sphérique}
   \vspace{-0.3cm}
+  \[
+    \begin{array}{rl}
+      \ddt{\ur}&=\dot{\theta}\utheta+\dot{\varphi}\sin\theta\uphi \\
+      \ddt{\utheta}&=-\dot{\theta}\ur+\dot{\varphi}\cos\theta\uphi \\
+      \ddt{\uphi}&=-\dot{\varphi}\sin\theta\ur-\dot{\varphi}\cos\theta\utheta\\
+    \end{array}
+  \]
   \begin{IEEEeqnarray*}{rCl}
     \vi
     \begin{cases}
@@ -428,24 +439,24 @@
   Cartésien-cylindrique : 
   \[
     \begin{array}{ll}
-      \vv{u}_{\rho}=\cos\varphi\ux + \sin\varphi\uy &
-      \ux = \cos\varphi\vv{u}_{\rho} - \sin\varphi\vv{u}_{\varphi}\\
+      \urho=\cos\varphi\ux + \sin\varphi\uy &
+      \ux = \cos\varphi\urho - \sin\varphi\uphi\\
 
-      \vv{u}_{\varphi}=-\sin\varphi\ux + \cos\varphi\uy &
-      \uy = \sin\varphi\vv{u}_{\rho} + \cos\varphi\vv{u}_{\varphi}\\
+      \uphi=-\sin\varphi\ux + \cos\varphi\uy &
+      \uy = \sin\varphi\urho + \cos\varphi\uphi\\
 
-      \vv{u}_{z}=\vv{u}_{z} & \vv{u}_{z}=\vv{u}_{z}
+      \uz=\uz & \uz=\uz
     \end{array}
   \]
 
   Cartésien-sphérique : 
   \begin{align*}
-    \vv{u}_{r}&=\sin\theta\cos\varphi\vv{u}_{x} + \sin\theta\sin\varphi\vv{u}_{y} + \cos\theta\vv{u}_{z}\\
-    \vv{u}_{\theta}&=\cos\theta\cos\varphi\vv{u}_{x} + \cos\theta\sin\varphi\vv{u}_{y} - \sin\theta\vv{u}_{z}\\
-    \vv{u}_{\varphi}&=-\sin\varphi\vv{u}_{x} + \cos\varphi\vv{u}_{y}\\\\
-    \vv{u}_{x}&=\sin\theta\cos\varphi\vv{u}_{r} + \cos\theta\cos\varphi\vv{u}_{\varphi} - \sin\varphi\vv{u}_{\theta}\\
-    \vv{u}_{y}&=\sin\theta\sin\varphi\vv{u}_r + \cos\theta\sin\varphi\vv{u}_{\varphi} + \cos\varphi\vv{u}_{\theta}\\
-    \vv{u}_{z}&=\cos\theta\vv{u}_r - \sin\theta\vv{u}_{\varphi}
+    \ur&=\sin\theta\cos\varphi\ux + \sin\theta\sin\varphi\uy + \cos\theta\uz\\
+    \utheta&=\cos\theta\cos\varphi\ux + \cos\theta\sin\varphi\uy - \sin\theta\uz\\
+    \uphi&=-\sin\varphi\ux + \cos\varphi\uy\\\\
+    \ux&=\sin\theta\cos\varphi\ur + \cos\theta\cos\varphi\utheta - \sin\varphi\uphi\\
+    \uy&=\sin\theta\sin\varphi\vv{u}_r + \cos\theta\sin\varphi\utheta + \cos\varphi\uphi\\
+    \uz&=\cos\theta\ur - \sin\theta\utheta
   \end{align*}
 
   Cylindrique-sphérique : 
@@ -521,7 +532,7 @@
   % \begin{table}
   % \begin{tabular}{p{2cm}|c|l|c}
   %     \toprule
-  %     \multirow{2}{*}{Frottement visqueux} & $ \F_{res}=k(l_0 - l)\vv{u}_{r} $ & Régime laminaire & \(f(||\vi_{rel}||)=k\nu||\vi_{rel}||\)\\
+  %     \multirow{2}{*}{Frottement visqueux} & $ \F_{res}=k(l_0 - l)\ur $ & Régime laminaire & \(f(||\vi_{rel}||)=k\nu||\vi_{rel}||\)\\
   %                                          & $ \F_{rel}=\vi_{obj} - \vi_{fluid} $ & Régime turbulant & c \\
   %      \midrule
   %     Frottement sec & & &\\
