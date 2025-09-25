@@ -1,0 +1,82 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{Solide quelconque}
+\req{1}{
+  \delta_{\alpha\beta}=
+  \begin{cases}
+    0\phantom{tex}\text{si} \phantom{tex}\alpha\neq\beta\\
+    1\phantom{tex}\text{si} \phantom{tex}\alpha=\beta\\
+  \end{cases}
+}
+\[
+  \diff{\mc_G}{t}=\diff{}{t}(\widetilde{I}_G\vian)=\mf_G^{\exte}
+\]
+\[
+  \ti_{G,\alpha\beta}=\sum_im_i\left[||\vv{GP}_i||^2\delta_{\alpha\beta} - GP_{i,\alpha}GP_{i,\beta}\right]
+\]
+\[
+  K_r = \tfrac{1}{2}M||\vi_G||^2 + \tfrac{1}{2}\omega^{\bot}\ti_G\omega
+\]
+\[
+  \omega^{\bot}\ti_G\omega=\mc_G\cdot\vian
+\]
+
+Si les axes sont parallèles a des axes de symétrie alors on a plus que des composantes sur la diagonale. Pour retrouver dans les coordonées que l'on veut on prend nos axes tel que \(\ti_G'\) soit diagonale et on compute \(\mc_G'=\ti_G'\cdot\vian'\). Puis on reprojette chaque axe sur ceux que l'on veut : \(\mc_G=\left(\mc_G'\cdot\ux\right)\ux + \left(\mc_G'\cdot\uy\right)\uy + \left(\mc_G'\cdot\uz\right)\uz\)
+
+\subsection{Si \(O\) ne bouge pas}
+\[
+  \diff{\mc_O}{t}=\diff{}{t}(\widetilde{I}_O\vian)=\mf_O^{\exte}
+\]
+\[
+  \ti_{O,\alpha\beta}=M\left[||\vv{OP}_i||^2\delta_{\alpha\beta} - GP_{i,\alpha}GP_{i,\beta}\right] + \ti_{G,\alpha\beta}
+\]
+\[
+  K =\tfrac{1}{2}\omega^{\bot}\ti_O\omega
+\]
+\subsection{Les formules utiles}
+\[
+  M\ac = \sum\F^{\exte} \phantom{text} \Delta K = W^{\exte}
+\]
+\[
+  \diff{\mc_G}{t}=\mf_G^{\exte} \phantom{text} \diff{\mc_O}{t}=\mf_O^{\exte}
+\]
+
+\[ \forall P\in \text{ solide } 
+  \begin{cases}
+    \mc_O = \vv{OG}\times m\vi_G + \mc_G \\
+    \vi_P = \vi_G + \Vian\times\vv{GP}
+  \end{cases}
+\]
+
+\[
+  \ac_G = \diff[2]{\vv{OG}}{t}
+\]
+\[
+  K = \tfrac{1}{2}M\vi_A^2 + M\vi_A\left(\vian\times\vv{AG}\right) + \tfrac{1}{2}\vian\left(\ti_G\vian\right)
+\]
+
+Position centre de masse : \(\displaystyle \vv{OG}=\frac{\sum_im_i\pos_i}{\sum_im_i}\)
+
+où \(\displaystyle x_G = \frac{1}{M}\int x\dee m\) 
+
+  % Masses constantes : 
+
+\(\displaystyle \vi_G = \diff{\pos_G}{t}=\frac{\qm}{M}\phantom{text}\F_{\exte}=\diff{\qm}{t}=M\ac_G\)
+
+\[\text{EdM d'un solide :}
+  \begin{cases}
+    \text{3 eq CDM : }m\dot{\vi}_G=\sum\F_{\exte}\\
+    \text{3 eq TMC : }\diff{\mc_G}{t}=\mf_G
+  \end{cases}
+\]
+
+Energie mécanique d'un solide : Toutes les forces qui sont au point de contact ne sont pas prisent en compte dans \(E_m\) (travaillent pas parce que la vitesse au point d'application est nulle).
+
+\subsection{Les cas particulier}
+Pour une force d'inertie d'un solide entier il faut d'abord le faire pour une masse quelconque \(m\) sur le solide puis le généraliser. Exemple d'une tige : Soit \(\displaystyle\mu=\frac{M}{L}\) avec \(M\) la masse d'un solide et \(L\) sa longueur. ON calcule la force d'inertie à une distance \(\rho\) du point pour une masse \(m\) quelconque : \(\dee \F_{ie}=\alpha(\theta,\rho)m\) avec \(\alpha(\theta, \rho)\) une fonction quelconque. Puis on remplace \(m=\mu\dee \rho\) puis on intègre : 
+\[
+  \F_{ie} = \int_0^L \dee\F_{ie} = \int_0^L\alpha(\theta,\rho)\mu\dee\rho
+\]
+
+\end{document}

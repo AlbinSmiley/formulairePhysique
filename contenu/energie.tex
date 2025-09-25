@@ -1,0 +1,90 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Energie}
+\subsection{Quantité de mouvement}
+\[
+  \vv{p}_f - \vv{p}_i = \Delta\vv{p} = \vv{J} = \int_{t_i}^{t_f}\F\dee{t}
+\]
+
+\subsection{Travail et Energie}
+
+Travail : 
+\[
+  W= \F_1\cdot\mathrm{d}\vv{r_1} + \F_2\cdot\mathrm{d}\vv{r_2} + \dots =\sum_i \F_i\cdot\mathrm{d}\pos_i
+\]
+
+Energie cinétique :
+\[
+  K = \tfrac{1}{2}mv^2 = \frac{p^2}{2m}
+\]
+
+Energie potentielle d'une force \F{} par rapport à un point \(P\) et un point de référence \(O\) : 
+\[
+  U(P)=-\int_O^P\F\cdot\dee{\pos}\phantom{texttex} W = K_B - K_A = \Delta K
+\]
+
+Énergie mécanique :
+\req{1}{
+  E_m = K + \sum_i U_i
+}
+
+Généralisation : 
+\[
+  K_B + \sum_i U_{iB} = K_A + \sum_i U_{iA} + \int_A^B \F^{NC}\cdot\mathrm{d}\pos
+\]
+
+\(P\) est la puissance d'une energie \(E\). 
+\[
+  P = \diff{E}{t} \phantom{textext} \diff{E_m}{t} = \F^{NC}\cdot\vi
+\]
+
+Si \(\F_{NC}\cdot\vi \neq 0 \) l'énergie n'est pas conservé, sinon oui. 
+
+Les forces conservatives sont tel que :
+\[
+  \F=-\nabla U=-\frac{\partial U}{\partial x}\ux-\frac{\partial U}{\partial y}\uy-\frac{\partial U}{\partial z}\uz
+\].
+
+Possibilité pour la conservation de l'énergie : 
+\begin{itemize}
+  \item Si \(\vec{F} \perp \vec{v}\), elle ne travaille pas (\(P = 0\)) et n'affecte ni \(E_m\) ni \(U\).
+  \item Si \(\vec{F} \parallel \vec{v}\) :
+    \begin{itemize}
+      \item Si \(\vec{F}\) est conservative, elle contribue à \(U\), donc à \(E_m\).
+      \item Si \(\vec{F}\) est non-conservative, elle modifie \(E_m\) : \(\dot{E}_m = P^{NC} = \vec{F} \cdot \vec{v}\).
+    \end{itemize}
+  \item Si seules des forces conservatives ou des forces non-conservatives perpendiculaires à \(\vec{v}\) agissent, \(E_m\) est conservée (\(\dot{E}_m = 0\)).
+  \item Si une force non-conservative a une composante parallèle à \(\vec{v}\), \(E_m\) n'est pas conservée (\(\dot{E}_m = P^{NC} \neq 0\)).
+\end{itemize}
+
+\subsection{Méthode pour les position d'équilibres et variations}
+\begin{enumerate}
+  \item \( \sum\F = m\ac = 0 \eva_{x_{eq}} \Leftrightarrow x_{eq} = ... \)
+    \begin{itemize}
+      \item \( \diff{\F}{x}\eva_{x_{eq}} > 0 \rightarrow \) equilibre stable
+      \item \( \diff{\F}{x}\eva_{x_{eq}} < 0 \rightarrow \) equilibre instable
+    \end{itemize}
+  \item \( \diff{U}{x}\eva_{x_{eq}} = 0  \Leftrightarrow x_{eq} = ... \)
+    \begin{itemize}
+      \item \( \diff[2]{U}{x}\eva_{x_{eq}} > 0 \rightarrow \) equilibre stable
+      \item \( \diff[2]{U}{x}\eva_{x_{eq}} < 0 \rightarrow \) equilibre instable
+    \end{itemize}
+      % \item[1.] $\sum\F\cdot\ux = m\ddot{x}\qquad$ dvpt Taylor $1^{er}$ ordre:
+      %   \begin{align*}
+      %     m\ddot{x}&=F|_{x_{eq}}+F'(x_{eq})(x-x_{eq})\\
+      %     \Leftrightarrow \ddot{x}&=\frac{F'(x_{eq})}{m}(x-x_{eq})\\
+      %     \Leftrightarrow \ddot{x}'&=\frac{F'(x_{eq})}{m}x' \qquad (x'=x-x_{eq})
+      %   \end{align*}
+      % \item [2.] dvpt Taylor $2^{nd}$ ordre de U:
+      %   \begin{align*}
+      %     ma\dot{x}=\frac{dE_{cin}}{dt}&=-\frac{dE_{pot}}{dt}=F\cdot\dot{x}\\
+      %     \Leftrightarrow ma\dot{x}&=-\frac{d}{dt}\left[U|_{x_{eq}} + \left.\frac{dU}{dx}\right|_{x_{eq}}(x-x_{eq})\right.\\
+      %                              & \hspace*{1.5cm}\left.+ \left.\frac{d^2U}{dx^2}\right|_{x_{eq}}(x-x_{eq})^2\right]\\
+      %       \text{and :}-\left.\frac{dU}{dx}\right|_{x_{eq}}&=-F|_{x_{eq}}=0\\
+      %         \Leftrightarrow m\ddot{x}&=-\left.\frac{d^2U}{dx^2}\right|_{x_{eq}}(x-x_{eq})
+      %         \end{align*}
+\end{enumerate}
+
+\end{document}

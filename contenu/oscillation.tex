@@ -1,0 +1,29 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Oscillations}
+\begin{itemize}
+  \item \(\ddot{x}=-\omega_0^2x\)
+    \begin{itemize}
+      \item \(x=A\sin\omega_0t + B\cos\omega_0t\)
+      \item \(x=C\sin(\omega_0t+\phi)\)
+      \item \(x=C\cos(\omega_0t+\phi')\)
+    \end{itemize}
+  \item \(\ddot{x}+2\gamma\dot{x}=-\omega_0^2x\)
+    \begin{itemize}
+      \item Mouvement oscillatoire sous-critique :\\ \(\gamma^2 < \omega_0^2 \rightarrow x = Ce^{\gamma t}\cos(\omega t + \phi)\)
+      \item Amortissement fort (surcritique) :\\ \(\gamma^2 > \omega_0^2 \rightarrow x = e^{-\gamma t}(Ae^{\omega t} + Be^{-\omega t})\)
+      \item Amortissement critique :\\ \(\gamma^2 = \omega^2_0 \rightarrow x = e^{-\gamma t}(A+Bt),\,\,\,\, \omega^2=|\gamma - \omega_0^2|\)
+    \end{itemize}
+  \item \(\ddot{x} + 2\gamma\dot{x} + \omega_0^2x=f\cos(\Omega t)\)
+    \begin{itemize}
+      \item \(x \overset{t>>\frac{1}{\gamma}}{\approx} A(\Omega)\cos(\Omega t + \phi(\Omega))\)
+      \item \(A(\Omega)=\frac{f}{\sqrt{(\omega_0^2 - \Omega^2)^2 + 4\gamma^2\Omega^2}}\)
+      \item Résonnance max : \(\Omega_{Max} = \sqrt{\omega_0^2 - 2\gamma^2}\)
+      \item \(\phi(\Omega) = \arctan(\frac{2\gamma\Omega}{\Omega^2 - \omega^2})\)
+    \end{itemize}
+  \item Periode pour une oscillation : \(T=\frac{1}{f}=\frac{2\pi}{\omega}\) (avec \(\omega = \omega_0\) pour un un oscillateur harmonique)
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,84 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\section{Kepler}
+\[
+  \diff{\mathcal{A}}{t}=\frac{||\vv{L}_0||}{2m}=\text{const} \phantom{text} \frac{a_A^3}{T_A^2}=\frac{a_B^3}{T_B^2}\phantom{text} \frac{T^2}{R^2}=\frac{4 \pi^2}{G(M_s + M)}
+\]
+\(a_A\approx R_A\) pour un cercle
+\section{Chocs}
+\[
+  \Qm^{in}=\Qm^{fin} \phantom{texttext}
+  \mc^{in}_O=\mc^{fin}_O
+\]
+\[ \Delta K \overset{?}{=}
+  \begin{cases}
+    0 = \implies \text{choc élastique}\\
+    0 \neq \implies \text{choc inélastique}
+  \end{cases}
+\]
+
+Il y a \textbf{choc mou} lorsque les deux masses se collent. La conservation de la quantité de mouvement est vérifié mais \(\Delta K \neq 0\).
+
+\subsection{Choc 1-D, élastique}
+\[
+  \begin{cases}
+    m_1 v_{1i} + m_2v_{2i} = m_1 v_{1f} + m_2 v_{2f} \\ 
+    \tfrac{1}{2}m_1 v_{1i}^2 + \tfrac{1}{2}m_1 v_{2f}^2 - \tfrac{1}{2}m_1 v_{1f}^2 = 0
+  \end{cases}
+\]
+
+Ce système a pour solutions :
+\[
+  \begin{cases}
+    v_{1f} = \frac{(m_1-m_2)v_{1i} + 2m_2v_{2i}}{m_1+m_2} \\
+    v_{2f} = \frac{(m_2-m_1)v_{2i} + 2m_1v_{1i}}{m_1+m_2}
+  \end{cases}
+\]
+
+\subsection{Choc inélastique}
+\[
+  \Delta K 
+  \begin{cases}
+    > 0 \implies \text{exo-énergetique} \\
+    < 0 \implies \text{endo-énergetique}
+  \end{cases}
+\]
+
+\subsection{Choc mou (parfaitement inélastique)}
+Les deux objet se collent (\(\vi_{1f}=\vi_{2f}=\vi_{\text{mou}}\)). Dans le cas particulier ou \(\vi_{2i}=0\), la conservation de la quantité de mouvement nous dit que : 
+\[
+  m_1\vi_{1i} = m_1\vi_{1f} + m_2\vi_{2f} = (m_1 + m_2)\vi_{\text{mou}} 
+\]
+\[
+  \vi_{\text{mou}} = \frac{m_1}{m_1 + m_2}\vi_{1i}
+\]
+\[
+  \Delta K = K^{\text{fin}} - K^{\text{in}}= -\tfrac{1}{2}\frac{m_1m_2}{m_1+m_2}v_{\text{mou}}^2 < 0 
+\]
+
+\section{Système à masses variable}
+\[ M(t)\diff{\vi}{t}=\sum\F^{\text{ext}} + \vi_{\text{rel}}\diff{M}{t} \]
+
+\section{Moment d'inertie}
+\(\Delta_C=\)axe du cylindre
+
+\scalebox{0.7}{
+  \begin{tabular}{p{3cm}l}
+    Boule (pleine) & \(\displaystyle I = \frac{2}{5}mR^2\)\\
+
+    Sphère (creuse) & \(\displaystyle I = \frac{2}{3}mR^2\)\\
+
+    Anneau (\(\Delta_c\)) & \(\displaystyle I = mR^2\)\\
+
+    Anneau (\(\bot\Delta_c\)) & \(\displaystyle I = \frac{1}{2}mR^2\)\\
+
+    Anneau (épaisseur \(\neq 0\), \(\Delta_c\)) & \(\displaystyle I = \frac{1}{2}m(R_1^2 + R_2^2)\)\\
+
+    Cylindre (\(\Delta_c\)) & \(\displaystyle I = \frac{1}{2}mR^2\)\\
+
+    Cylindre (\(\bot\Delta_c\)) & \(\displaystyle I = \frac{1}{4}mR^2 + \frac{1}{12}mL^2\)
+  \end{tabular}
+}
+\end{document}

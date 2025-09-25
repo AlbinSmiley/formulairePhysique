@@ -1,0 +1,261 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{Intro mathématique}
+\renewcommand{\arraystretch}{2} % Augmente l'espacement des lignes de 50%
+  % \subsection{Logarithmes}
+  % \[
+  %   y=\log_a(x) \Leftrightarrow a^y = x
+  % \]
+  % \[
+  %   \log_a(xy) = \log_a(x) + \log_a(y)
+  % \]
+  % \[
+  %   \log_a\left(\frac{x}{y}\right) = \log_a(x) - \log_a(y)
+  % \]
+  % \[
+  %   \log_a\left(\frac{1}{x}\right) = -\log_a(x)
+  % \]
+  % \[
+  %   \log_a\left(x^p\right) = p\log_a(x)
+  % \]
+  % \[
+  %   y=\log(x) \Leftrightarrow 10^y = x 
+  % \]
+  % \[
+  %   y=\ln(x) \Leftrightarrow e^y = x 
+  % \]
+  %
+  % Changement de base : 
+  % \[
+  %   \log_a(x)=\frac{\log_b(x)}{\log_b(a)}=\frac{\log(x)}{\log(a)}=\frac{\ln(x)}{\ln(a)}
+  % \]
+
+\subsection{Trigo}
+\begin{center}
+  \begin{tabular}{cc}
+    \trigod{\cos^2(\alpha) + \sin^2(\alpha) = 1}{ \tan(\alpha)=\frac{\sin(\alpha)}{\cos(\alpha)}=\frac{1}{\cot(\alpha)}}
+    \trigod{ \frac{1}{\cos^2(\alpha)}=1+\tan^2(\alpha)}{ \frac{1}{\sin^2(\alpha)}=1+\cot^2(\alpha)}
+  \end{tabular}
+  \vspace{0.1cm}\hrule\vspace{0.1cm}
+  \scalebox{0.75}{
+    \begin{tabular}{ccc}
+        % \toprule
+      \trigo{\Cos{\alpha+2\pi}=\Cos{\alpha}}{\Sin{\alpha+2\pi}=\Sin{\alpha}}{\Tan{\alpha+\pi}=\Tan{\alpha}}
+        % \midrule
+      \trigo{\Cos{-\alpha}=\Cos{\alpha}}{\Sin{-\alpha}=-\Sin{\alpha}}{\Tan{-\alpha}=-\Tan{\alpha}}
+      \trigo{\Cos{\pi-\alpha}=-\Cos{\alpha}}{\Sin{\pi-\alpha}=\Sin{\alpha}}{\Tan{\pi-\alpha}=-\Tan{\alpha}}
+      \trigo{\Cos{\pi+\alpha}=-\Cos{\alpha}}{\Sin{\pi+\alpha}=-\Sin{\alpha}}{\Tan{\pi+\alpha}=\Tan{\alpha}}
+      \trigo{\Cos{\frac{\pi}{2}-\alpha}=\Sin{\alpha}}{\Sin{\frac{\pi}{2}-\alpha}=\Cos{\alpha}}{\Tan{\frac{\pi}{2}-\alpha}=\Cot{\alpha}}
+      \trigo{\Cos{\frac{\pi}{2}+\alpha}=-\Sin{\alpha}}{\Sin{\frac{\pi}{2}+\alpha}=\Cos{\alpha}}{\Tan{\frac{\pi}{2}+\alpha}=-\Cot{\alpha}}
+        % \bottomrule
+    \end{tabular}
+  }
+  \vspace{0.1cm}\hrule\vspace{0.1cm}
+  \scalebox{0.6}{
+    \begin{tabular}{cc}
+        % \toprule
+      \trigod{\Cos{\alpha+\beta}=\Cos{\alpha}\Cos{\beta}-\Sin{\alpha}\Sin{\beta}}{\Cos{\alpha-\beta}=\Cos{\alpha}\Cos{\beta}+\Sin{\alpha}\Sin{\beta}}
+      \trigod{\Sin{\alpha+\beta}=\Sin{\alpha}\Cos{\beta}+\Cos{\alpha}\Sin{\beta}}{\Sin{\alpha-\beta}=\Sin{\alpha}\Cos{\beta}-\Cos{\alpha}\Sin{\beta}}
+      \trigod{\Tan{\alpha+\beta}=\frac{\Tan{\alpha}+\Tan{\beta}}{1-\Tan{\alpha}\Tan{\beta}}}{\Tan{\alpha-\beta}=\frac{\Tan{\alpha}-\Tan{\beta}}{1+\Tan{\alpha}\Tan{\beta}}}
+        % \bottomrule
+    \end{tabular}
+  }
+  \vspace{0.1cm}\hrule\vspace{0.1cm}
+  \scalebox{0.9}{
+    \begin{tabular}{l}
+        % \toprule
+      \(\displaystyle\Cos{2\alpha}=\Coss{\alpha}-\Sins{\alpha}=1-2\Sins{\alpha}=2\Coss{\alpha}-1\)\\
+      \(\displaystyle\Sin{2\alpha}=2\Sin{\alpha}\Cos{\alpha}\)\\
+      \(\displaystyle\Tan{2\alpha}=\frac{2\Tan{\alpha}}{1-\Tans{\alpha}}\)\\
+        % \bottomrule
+    \end{tabular}
+  }
+  \vspace{0.1cm}\hrule\vspace{0.1cm}
+  \scalebox{0.8}{
+    \begin{tabular}{cc}
+        % \toprule
+      \trigod{\Coss{\frac{\alpha}{2}}=\frac{1+\Cos{\alpha}}{2}}{\Sins{\frac{\alpha}{2}}=\frac{1-\Cos{\alpha}}{2}}
+      \trigod{\Tans{\frac{\alpha}{2}}=\frac{1-\Cos{\alpha}}{1+\Cos{\alpha}}}{\Tan{\frac{\alpha}{2}}=\frac{1-\Cos{\alpha}}{\Sin{\alpha}}=\frac{\Sin{\alpha}}{1+\Cos{\alpha}}}
+        % \bottomrule
+    \end{tabular}
+  }
+  \vspace{0.1cm}\hrule\vspace{0.1cm}
+  \scalebox{0.6}{
+    \begin{tabular}{cc}
+      \trigod{
+        \Cos{\alpha}+\Cos{\beta}=2\Cos{\frac{\alpha+\beta}{2}}\Cos{\frac{\alpha-\beta}{2}}
+      }{
+        \Cos{\alpha}-\Cos{\beta}=-2\Sin{\frac{\alpha+\beta}{2}}\Sin{\frac{\alpha-\beta}{2}}
+      }
+      \trigod{
+        \Sin{\alpha}+\Sin{\beta}=2\Sin{\frac{\alpha+\beta}{2}}\Cos{\frac{\alpha-\beta}{2}}
+      }{
+        \Sin{\alpha}-\Sin{\beta}=2\Cos{\frac{\alpha+\beta}{2}}\Sin{\frac{\alpha-\beta}{2}}
+      }
+      \trigod{
+        \Tan{\alpha}+\Tan{\beta}= \frac{\Sin{\alpha+\beta}}{\Cos{\alpha}\Cos{\beta}}
+      }{
+        \Tan{\alpha}-\Tan{\beta}= \frac{\Sin{\alpha-\beta}}{\Cos{\alpha}\Cos{\beta}}
+      }
+    \end{tabular}
+  }
+  \vspace{0.1cm}\hrule\vspace{0.1cm}
+\end{center}
+\[
+  a\Cos{\alpha} +b\Sin{\alpha} = \sqrt{a^2 + b^2}\Cos{\alpha - \varphi}
+\]
+\[
+  \varphi=\Arccos{\frac{a}{\sqrt{a^2 + b^2}}}=\Arcsin{\frac{b}{\sqrt{a^2 + b^2}}}=\Arctan{\frac{b}{a}}
+\]
+  % \begin{center} \vspace{0.1cm}\hrule\vspace{0.1cm} \end{center}
+  % \begin{align*}
+  %   2\Cos{\alpha}\Cos{\beta}&=\Cos{\alpha+\beta} + \Cos{\alpha-\beta}\\
+  %   2\Cos{\alpha}\Sin{\beta}&=\Sin{\alpha+\beta} - \Sin{\alpha-\beta}\\
+  %   2\Sin{\alpha}\Sin{\beta}&=-\Cos{\alpha+\beta} + \Cos{\alpha-\beta}\\
+  % \end{align*}
+  % \begin{center} \hrule\vspace{0.1cm} \end{center}
+\[
+  \cos(x)=a \Rightarrow
+  \begin{cases}
+    x = \arccos(a) + k\cdot 2\pi \,\,\,\,\text{ou}\\
+    x = - \arcsin(a) + k\cdot 2\pi 
+  \end{cases}
+\]
+
+\[
+  \sin(x)=a \Rightarrow
+  \begin{cases}
+    x = \arcsin(a) + k\cdot 2\pi \,\,\,\,\text{ou}\\
+    x = \pi - \arcsin(a) + k\cdot 2\pi 
+  \end{cases}
+\]
+
+\[\tan(x)= a \Rightarrow x = \arctan(a) + k\cdot\pi\]
+  % \begin{center} \vspace{0.1cm}\hrule\vspace{0.1cm} \end{center}
+\[
+  a^2 = b^2 + c^2 - 2bc\Cos{\alpha}\phantom{text} \frac{a}{\sin(\alpha)}=\frac{b}{\sin(\beta)} 
+\]
+
+
+\renewcommand{\arraystretch}{1}
+
+\subsection{Géométrie}
+\subsubsection{Vecteur}
+\req{1}{
+  \ac\cdot\vv{b}=||\ac||\,\,||\vv{b}||\cos\varphi \phantom{textus} ||\ac||=\sqrt{\ac\cdot\ac} 
+}
+
+Projection de \(\vv{b}\) sur \(\ac\) : 
+\[
+  \vv{b}' = \frac{\ac\cdot\vv{b}}{||\ac||^2}\ac \phantom{texttext} 
+  ||\ac\times\vv{b}||=||\ac||\,\,||\vv{b}||\sin\varphi
+\]
+\[
+  \ac\times\vv{b}=\begin{pmatrix}
+    a_2b_3 - a_3b_2 \\ 
+    a_3b_1 - a_1b_3 \\ 
+    a_1b_2 - a_2b_1
+  \end{pmatrix}
+  =-(\vecb\times\veca)
+\]
+\[
+  \veca\times(\vecb\times\vecc)=(\veca\cdot\vecc)\vecb - (\veca\cdot\vecb)\vecc
+\]
+
+\subsection{Dérivés et integrales}
+  % \subsubsection{Dérivation}
+  % \(\displaystyle
+  %   f'(x)=\diff{f}{x} \phantom{text} f''(x)=\diff[2]{f}{x} \phantom{text} f^{(n)}(x)=\diff[n]{f}{x}
+  % \)
+  %
+  % \(\displaystyle
+  %   (f+g)'(x)=f'(x)+g'(x) \phantom{text} (\lambda\cdot f)'(x)=\lambda f'(x)
+  % \)
+  %
+  % \(\displaystyle
+  %   (f\cdot g)'(x)=f'(x)g(x)+f(x)g'(x)
+  % \)
+  %
+  % \(\displaystyle
+  %   \left(\frac{f}{g}\right)'(x)=\frac{f'(x)g(x)-f(x)g'(x)}{g^2(x)}
+  % \)
+  %
+  % \(\displaystyle
+  %   (g\circ f)'(x)=g'(f(x))f'(x)
+  % \)
+  % \subsubsection{Intégration}
+  % \begin{tabular}{p{1.8cm}l}
+  %   \multirow{2}{*}{Linéarité} & \eqentry{ \int(f(x) + g(x))\dx = \int f(x)\dx + \int g(x)\dx } \\ 
+  %
+  %                              & \eqentry{ \int \lambda f(x)\dx = \lambda\int f(x)\dx } \\
+  %
+  %   Par parties & \eqentry{ \int f'(x)g(x)\dx = f(x)g(x) - \int f(x)g'(x)\dx} \\
+  %
+  %   Par substitution & \eqentry{ \int g(f(x))f'(x)\dx = G(x) + c} \\ 
+  %
+  %   Par changement de variable (\(x=f(t)\)) & \eqentry{ \int g(x)\dx = \int g(f(t))f'(t) \dt } \\
+  % \end{tabular}
+
+  % Linéarité : 
+  %
+  % \(\displaystyle \int(f(x) + g(x))\dx = \int f(x)\dx + \int g(x)\dx \)
+  %
+  % \(\displaystyle \int \lambda f(x)\dx = \lambda\int f(x)\dx \)
+
+Par parties : 
+
+\(\displaystyle \int f'(x)g(x)\dx = f(x)g(x) - \int f(x)g'(x)\dx \)
+
+Par substitution : 
+\(\displaystyle \int g(f(x))f'(x)\dx = G(x) + c \)
+
+Par changement de variable (\(x=f(t)\)) : 
+
+\(\displaystyle \int g(x)\dx = \int g(f(t))f'(t) \dt \)
+
+\renewcommand{\arraystretch}{2}
+\begin{center}
+  \scalebox{0.6}{
+    \begin{tabular}{c|c|c}
+      \toprule
+      \eqligne{f(x)}{f'(x)}{F(x)}
+      \midrule
+      \eqligne{a}{0}{ax}
+      \eqligne{x}{1}{x^2}
+      \eqligne{\frac{1}{x}}{-\frac{1}{x^2}}{\ln|x|}
+      \eqligne{\sqrt{x}}{\frac{1}{2\sqrt{x}}}{\tfrac{2}{3}x\sqrt{x}}
+      \eqligne{\frac{1}{\sqrt{x}}}{-\tfrac{1}{2}\sqrt{x^3}}{2\sqrt{x}}
+      \eqligne{x^n}{nx^{n-1}}{\frac{1}{n+1}x^{n+1}}
+      \eqligne{\frac{1}{x^{n}}}{\frac{-n}{x^{n-1}}}{\frac{-1}{n-1}\frac{1}{x^{n-1}}}
+      \eqligne{\sqrt[n]{x}}{\frac{1}{n}\sqrt[n]{x^{n-1}}}{\frac{n}{n+1}\sqrt[n]{x^{n+1}}}
+        % \midrule
+      \eqligne{e^{ax}}{ae^{ax}}{\frac{1}{a}e^{ax}}
+      \eqligne{b^{ax}}{ab^{ax}\ln(b)}{\frac{b^{ax}}{a\ln(b)}}
+      \eqligne{\ln(x)}{\frac{1}{x}}{x(\ln(x) - 1)}
+      \eqligne{\log_{a}(bx)}{\frac{1}{x\ln(a)}}{x\log_{a}\left(\frac{bx}{e}\right)}
+        % \midrule
+      \eqligne{\sin(x)}{\cos(x)}{-\cos(x)}
+      \eqligne{\cos(x)}{-\sin(x)}{\sin(x)}
+      \eqligne{\tan(x)}{\frac{1}{\cos^2(x)}}{-\ln|\cos(x)|}
+        % \eqligne{\sin^2(x)}{2\sin(x)\cos(x)}{\tfrac{1}{2}(x-\sin(x)\cos(x))}
+        % \eqligne{\cos^2(x)}{-2\sin(x)\cos(x)}{\tfrac{1}{2}(x+\sin(x)\cos(x))}
+        % \eqligne{\tan^2(x)}{2 \frac{\tan(x)}{\cos^2(x)}}{\tan(x) - x}
+        % \midrule 
+      \eqligne{\arcsin(x)}{\frac{1}{\sqrt{1-x^2}}}{x\arcsin(x) + \sqrt{1-x^2}}
+      \eqligne{\arccos(x)}{-\frac{1}{\sqrt{1-x^2}}}{x\arccos(x) - \sqrt{1-x^2}}
+      \eqligne{\arctan(x)}{\frac{1}{1+x^2}}{x\arctan(x) - \tfrac{1}{2}\ln(1+x^2)}
+        % \midrule
+      \eqligne{g(x)g'(x)}{g'(x)^2 +g(x)g''(x)}{\tfrac{1}{2}g(x)^2}
+      \eqligne{\frac{g'(x)}{g(x)}}{\frac{g''(x)g(x)-g'(x)^2}{g(x)^2}}{\ln|g(x)|}
+      \bottomrule
+    \end{tabular}
+  }
+\end{center}
+\renewcommand{\arraystretch}{1} % Augmente l'espacement des lignes de 50%
+\subsection{Polynômes Taylor}
+\[
+  P_N(x)=\eval{\sum_{n=0}^{N}\frac{1}{n!}\diff[n]{f}{x}}_{x=x_0}(x-x_0)^n
+\]
+
+\end{document}

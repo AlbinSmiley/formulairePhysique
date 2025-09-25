@@ -1,0 +1,120 @@
+\documentclass[landscape,a4paper]{article}
+\usepackage{commath}
+\usepackage{esvect}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{gensymb}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{wasysym}
+\usepackage{MnSymbol}
+\usepackage{IEEEtrantools}
+\usepackage{calc}
+\usepackage{physics}
+\usepackage{siunitx}
+\sisetup{product-symbol = \ensuremath{\cdot}}
+\sisetup{inter-unit-product = \ensuremath{{}\cdot{}}}
+\usepackage{fixdif}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{xfrac}
+\usepackage{indentfirst}
+\usepackage{multicol}
+\usepackage{parcolumns}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[thinc]{esdiff}
+\usepackage{xfrac}
+\usepackage[margin=0.5cm]{geometry}
+\usepackage[fontsize=7pt]{fontsize}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows.meta}
+\usepackage[tiny]{titlesec}
+\titlespacing{\section}{0pt}{*0.5}{*0.3}
+\titlespacing{\subsection}{0pt}{*1}{*2}
+\titlespacing{\subsubsection}{0pt}{*0.4}{*0.5}
+
+\usepackage{subfiles}
+
+\newcommand{\eqentry}[1]{\(\displaystyle #1\)}
+\pagestyle{empty}
+
+\newcommand{\req}[2]{
+  \begin{center}
+    \scalebox{#1}{
+      \begin{tabular}{c}
+        \(\displaystyle
+        #2
+        \)
+      \end{tabular}
+    }
+  \end{center}
+}
+
+\newcommand{\dee}[1]{
+  \,\,\,\mathrm{d}{#1}
+}
+
+\newcommand{\dx}{ \dee x }
+\newcommand{\dt}{ \dee t }
+\newcommand{\ddt}{\tfrac{\mathrm{d}}{\mathrm{d}t} }
+
+\newcommand{\veca}{\vv{a}}
+\newcommand{\vecb}{\vv{b}}
+\newcommand{\vecc}{\vv{c}}
+
+\newcommand{\F}{\ensuremath{\vv{F}}}
+
+\newcommand{\Qm}{\ensuremath{\vv{P}}}
+\newcommand{\qm}{\ensuremath{\vv{p}}}
+
+\newcommand{\pos}{\ensuremath{\vv{r}}}
+\newcommand{\vi}{\ensuremath{\vv{v}}}
+\newcommand{\vian}{\ensuremath{\vv{\omega}}}
+\newcommand{\Vian}{\ensuremath{\vv{\Omega}}}
+
+\newcommand{\ac}{\ensuremath{\vv{a}}}
+
+\newcommand{\eva}{\bigg|}
+
+\newcommand{\ux}{\ensuremath{\vv{u}_x}}
+\newcommand{\uy}{\ensuremath{\vv{u}_y}}
+\newcommand{\uz}{\ensuremath{\vv{u}_z}}
+
+\newcommand{\ur}{\ensuremath{\vv{u}_{r}}}
+\newcommand{\utheta}{\ensuremath{\vv{u}_{\theta}}}
+\newcommand{\uphi}{\ensuremath{\vv{u}_{\varphi}}}
+\newcommand{\urho}{\ensuremath{\vv{u}_{\rho}}}
+
+\newcommand{\mc}{\ensuremath{\vv{L}}}
+\newcommand{\mf}{\ensuremath{\vv{M}}}
+
+\newcommand{\exte}{\text{ext}}
+\newcommand{\inte}{\text{int}}
+
+\newcommand{\ti}{\ensuremath{\widetilde{I}}}
+
+\newcommand{\refe}{\mathcal{R}}
+
+\newcommand{\nod}{\vv{n}}
+
+\newcommand{\eqligne}[3]{\(\displaystyle #2\) & \(\displaystyle #1\) & \(\displaystyle#3\) \\}
+\newcommand{\trigo}[3]{\(\displaystyle #1\) & \(\displaystyle #2\) & \(\displaystyle#3\) \\}
+\newcommand{\trigod}[2]{\(\displaystyle #1\) & \(\displaystyle #2\) \\}
+
+\newcommand{\Sin}[1]{\sin\left(#1\right)}
+\newcommand{\Cos}[1]{\cos\left(#1\right)}
+\newcommand{\Tan}[1]{\tan\left(#1\right)}
+\newcommand{\Sins}[1]{\sin^2\left(#1\right)}
+\newcommand{\Coss}[1]{\cos^2\left(#1\right)}
+\newcommand{\Tans}[1]{\tan^2\left(#1\right)}
+\newcommand{\Cot}[1]{\cot\left(#1\right)}
+\newcommand{\Arcsin}[1]{\arcsin\left(#1\right)}
+\newcommand{\Arccos}[1]{\arccos\left(#1\right)}
+\newcommand{\Arctan}[1]{\arctan\left(#1\right)}
+
+\graphicspath{{images/}}

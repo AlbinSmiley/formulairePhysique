@@ -1,0 +1,100 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\section{Dynamique}
+\req{1}{
+  \sum_i \F_i=m\ac=m\diff[2]{\pos}{t}\phantom{texttex} \F_{1\to 2} = -\F_{2\to 1}
+}
+
+\subsection{Ressort}
+\req{1}{
+  \F_r = -k(x-l_0)\vv{u} \phantom{texttext} U=\tfrac{1}{2}k(x-l_0)^2
+}
+
+\subsection{Gravitation}
+\req{1}{
+  \F_{2\to 1}=-G \frac{m_1m_2}{r_{12}^2} \vv{u}_{2\to 1} \phantom{textte} \F=m\vv{g}
+}
+
+\subsection{Electromagnétisme}
+\[
+  \F_{2\to 1}= \frac{1}{4\pi\epsilon_0}\frac{q_1q_2}{r_{12}^2}\vv{u}_{2\to 1}
+\]
+
+\[
+  \F=q\vv{E} \phantom{texttext} \F=q\vi\times\vv{B}
+\]
+
+\begin{center}
+  \begin{tikzpicture}[scale=0.3,>=Stealth]
+    \coordinate (q1) at (0,0);
+    \coordinate (q2) at (3,0);
+
+    \draw[dashed] (q1) -- (q2);
+
+    \draw[->] (q2) -- (1.7,0) node[midway, above] {$\vec{u}_{2 \to 1}$};
+
+    \fill[red] (q1) circle(0.2cm);
+    \fill[red] (q2) circle(0.2cm);
+
+    \node[left] at (q1) {$q_1$};
+    \node[right] at (q2) {$q_2$};
+  \end{tikzpicture}\hspace{1cm}
+  \begin{tikzpicture}[scale=0.3,>=Stealth]
+    \coordinate (q1) at (0,0);
+    \coordinate (q2) at (3,0);
+
+    \draw[dashed] (q1) -- (q2);
+
+    \draw[->] (q2) -- (1.7,0) node[midway, above] {$\vec{u}_{2 \to 1}$};
+
+    \fill[red] (q1) circle(0.2cm);
+    \fill[red] (q2) circle(0.2cm);
+
+    \node[left] at (q1) {$m_1$};
+    \node[right] at (q2) {$m_2$};
+  \end{tikzpicture}
+\end{center}
+\subsection{Frottement}
+
+  % \begin{table}
+  % \begin{tabular}{p{2cm}|c|l|c}
+  %     \toprule
+  %     \multirow{2}{*}{Frottement visqueux} & $ \F_{res}=k(l_0 - l)\ur $ & Régime laminaire & \(f(||\vi_{rel}||)=k\nu||\vi_{rel}||\)\\
+  %                                          & $ \F_{rel}=\vi_{obj} - \vi_{fluid} $ & Régime turbulant & c \\
+  %      \midrule
+  %     Frottement sec & & &\\
+  %      \bottomrule
+  %    \end{tabular}
+  % \end{table}
+
+\subsubsection{Frottement visqueux}
+\[
+  \F_{fr} = -f(||\vi_{rel}||)\frac{\vi_{rel}}{||\vi_{rel}||}
+\]
+
+Régime laminaire : 
+\[
+  f(||\vi_{rel}||)=k\eta||\vi_{rel}||
+\]
+
+Régime turbulant :
+\[
+  f(||\vi_{rel}||) = \tfrac{1}{2}C_x\rho S||\vi_{rel}||^2
+\]
+
+\subsubsection{Frottement sec}
+Dépend des matériaux et de \(||\vv{N}||\), pas de l'aire de la surface. 
+
+Statique :
+
+\[
+  ||\F_{fr}|| \leq \F_{Max}^{fr} = \F^{arr}= \mu_s||\vv{N}||
+\]
+
+Avec glissement :
+
+\[
+  \F=-\mu_c||\vv{N}||\frac{\vi}{||\vi||}
+\]
+
+\end{document}
