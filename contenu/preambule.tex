@@ -1,20 +1,15 @@
 \documentclass[landscape,a4paper]{article}
-\usepackage{commath}
+% \usepackage{commath}
+% \usepackage{xcolor}
 \usepackage{esvect}
-\usepackage{xcolor}
 \usepackage{graphicx}
-\usepackage{gensymb}
+% \usepackage{gensymb}
 \usepackage{mathtools}
-\usepackage{amsfonts}
-\usepackage{wasysym}
-\usepackage{MnSymbol}
+% \usepackage{amsfonts}
+% \usepackage{wasysym}
+% \usepackage{MnSymbol}
 \usepackage{IEEEtrantools}
-\usepackage{calc}
 \usepackage{physics}
-\usepackage{siunitx}
-\sisetup{product-symbol = \ensuremath{\cdot}}
-\sisetup{inter-unit-product = \ensuremath{{}\cdot{}}}
-\usepackage{fixdif}
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{multirow}
@@ -22,14 +17,14 @@
 \usepackage{xfrac}
 \usepackage{indentfirst}
 \usepackage{multicol}
-\usepackage{parcolumns}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
-\usepackage[thinc]{esdiff}
 \usepackage{xfrac}
+\usepackage{subfiles}
 \usepackage[margin=0.5cm]{geometry}
 \usepackage[fontsize=7pt]{fontsize}
+\usepackage[thinc]{esdiff}
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usetikzlibrary{arrows.meta}
@@ -37,8 +32,6 @@
 \titlespacing{\section}{0pt}{*0.5}{*0.3}
 \titlespacing{\subsection}{0pt}{*1}{*2}
 \titlespacing{\subsubsection}{0pt}{*0.4}{*0.5}
-
-\usepackage{subfiles}
 
 \newcommand{\eqentry}[1]{\(\displaystyle #1\)}
 \pagestyle{empty}
@@ -58,6 +51,8 @@
 \newcommand{\dee}[1]{
   \,\,\,\mathrm{d}{#1}
 }
+
+% \renewcommand{\vv}[1]{\vv{#1}}
 
 \newcommand{\dx}{ \dee x }
 \newcommand{\dt}{ \dee t }
