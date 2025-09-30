@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759250912.55864 "main.tex" "main.pdf" "main" 1759250913.33062 0
+["pdflatex"] 1759251495.49352 "main.tex" "main.pdf" "main" 1759251496.28398 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx0700.tfm" 1742685315 3584 ca0c423beaacd28d53ddce5a826cd558 ""
@@ -157,15 +157,15 @@
   "contenu/intromath.tex" 1759250671.54446 9323 bcaf4dc2edd984a896dead077e10d292 ""
   "contenu/lagrange.tex" 1759249802.67876 165 7559e93e56737670088ea2d5821cb4f8 ""
   "contenu/oscillation.tex" 1758809138.93975 1416 34455d13326543d0338b6b5a20d374c1 ""
-  "contenu/preambule.tex" 1759249878.96884 3543 ab030c00723fa2b3c8ea6f4b9a0fcec7 ""
+  "contenu/preambule.tex" 1759251493.61684 3429 74d86613e3be8b4f8f662fb3acaa541e ""
   "contenu/refnonabsolu.tex" 1758809138.94016 1956 139f5718ef032d1b4dc3e02075a4b6b0 ""
   "contenu/solid3d.tex" 1758809138.94057 2690 147776b2efc921b47b07b70ae79810fb ""
-  "contenu/solidqcq.tex" 1759250910.80844 3023 1ca1bef425ddcd19554ff30176968d36 ""
+  "contenu/solidqcq.tex" 1759250956.55848 3023 1ca1bef425ddcd19554ff30176968d36 ""
   "images/PHYSIQUEI_1.png" 1758633654.77391 247960 d3d2f074104e5158bbb9fcc46115fc39 ""
   "images/PHYSIQUEI_2.png" 1758633660.00436 284535 633592c01ab935ea1ccd38b10da99eb8 ""
   "images/euler.PNG" 1758633650.24396 400273 2da1100797e89207f69eee5729f9c40c ""
-  "main.aux" 1759250913.27209 5434 d3e74b907369f54ec2cf2c8c066fa426 "pdflatex"
-  "main.tex" 1759248984.43839 433 feb70a594420a2b77030feb0b481c64f ""
+  "main.aux" 1759251496.23106 5434 6711859875fb7a2c16995acb503f3075 "pdflatex"
+  "main.tex" 1759251178.885 433 feb70a594420a2b77030feb0b481c64f ""
   (generated)
   "main.aux"
   "main.log"

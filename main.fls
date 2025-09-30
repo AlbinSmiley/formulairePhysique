@@ -280,12 +280,12 @@ INPUT ./contenu/energie.tex
 INPUT contenu/energie.tex
 INPUT ./contenu/energie.tex
 INPUT contenu/energie.tex
+INPUT ./contenu/oscillation.tex
+INPUT contenu/oscillation.tex
+INPUT ./contenu/oscillation.tex
+INPUT contenu/oscillation.tex
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
-INPUT ./contenu/oscillation.tex
-INPUT contenu/oscillation.tex
-INPUT ./contenu/oscillation.tex
-INPUT contenu/oscillation.tex
 INPUT ./contenu/refnonabsolu.tex
 INPUT contenu/refnonabsolu.tex
 INPUT ./contenu/refnonabsolu.tex
