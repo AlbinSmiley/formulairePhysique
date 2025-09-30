@@ -307,6 +307,10 @@ INPUT ./contenu/autre.tex
 INPUT contenu/autre.tex
 INPUT ./contenu/autre.tex
 INPUT contenu/autre.tex
+INPUT ./contenu/lagrange.tex
+INPUT contenu/lagrange.tex
+INPUT ./contenu/lagrange.tex
+INPUT contenu/lagrange.tex
 INPUT main.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb

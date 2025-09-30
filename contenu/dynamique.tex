@@ -72,32 +72,32 @@
 
 \subsubsection{Frottement visqueux}
 \[
-  \F_{fr} = -f(||\vi_{rel}||)\frac{\vi_{rel}}{||\vi_{rel}||}
+  \F_{fr} = -f(\norm{\vi_{rel}})\frac{\vi_{rel}}{\norm{\vi_{rel}}}
 \]
 
 Régime laminaire : 
 \[
-  f(||\vi_{rel}||)=k\eta||\vi_{rel}||
+  f(\norm{\vi_{rel}})=k\eta\norm{\vi_{rel}}
 \]
 
 Régime turbulant :
 \[
-  f(||\vi_{rel}||) = \tfrac{1}{2}C_x\rho S||\vi_{rel}||^2
+  f(\norm{\vi_{rel}}) = \tfrac{1}{2}C_x\rho S\norm{\vi_{rel}}^2
 \]
 
 \subsubsection{Frottement sec}
-Dépend des matériaux et de \(||\vv{N}||\), pas de l'aire de la surface. 
+Dépend des matériaux et de \(\norm{\vv{N}}\), pas de l'aire de la surface. 
 
 Statique :
 
 \[
-  ||\F_{fr}|| \leq \F_{Max}^{fr} = \F^{arr}= \mu_s||\vv{N}||
+  \norm{\F_{fr}} \leq \F_{Max}^{fr} = \F^{arr}= \mu_s\norm{\vv{N}}
 \]
 
 Avec glissement :
 
 \[
-  \F=-\mu_c||\vv{N}||\frac{\vi}{||\vi||}
+  \F=-\mu_c\norm{\vv{N}}\frac{\vi}{\norm{\vi}}
 \]
 
 \end{document}

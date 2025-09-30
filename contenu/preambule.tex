@@ -33,6 +33,19 @@
 \titlespacing{\subsection}{0pt}{*1}{*2}
 \titlespacing{\subsubsection}{0pt}{*0.4}{*0.5}
 
+% \setlength{\abovedisplayskip}{0pt}
+% \setlength{\belowdisplayskip}{0pt}
+% \setlength{\abovedisplayshortskip}{0pt}
+\makeatletter
+\g@addto@macro\normalsize{%
+  \setlength\abovedisplayskip{2pt}%
+  \setlength\belowdisplayskip{2pt}%
+  \setlength\abovedisplayshortskip{2pt}%
+  \setlength\belowdisplayshortskip{2pt}%
+}
+\makeatother
+
+
 \newcommand{\eqentry}[1]{\(\displaystyle #1\)}
 \pagestyle{empty}
 
@@ -43,6 +56,15 @@
         \(\displaystyle
         #2
         \)
+      \end{tabular}
+    }
+  \end{center}
+}
+\newcommand{\scale}[2]{
+  \begin{center}
+    \scalebox{#1}{
+      \begin{tabular}{c}
+        #2
       \end{tabular}
     }
   \end{center}
@@ -111,5 +133,7 @@
 \newcommand{\Arcsin}[1]{\arcsin\left(#1\right)}
 \newcommand{\Arccos}[1]{\arccos\left(#1\right)}
 \newcommand{\Arctan}[1]{\arctan\left(#1\right)}
+
+\newcommand{\lag}{\mathcal{L}}
 
 \graphicspath{{images/}}
