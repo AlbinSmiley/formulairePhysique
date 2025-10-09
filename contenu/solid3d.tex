@@ -22,9 +22,9 @@ Pour passer de \(\refe\) à \(\refe'\) :
 
 \subsubsection{Vitesse et acceleration d'un point du solide}
 \[\vi_p=\vi_{O'}+\vian\times\vv{O'P}\]
-\[\ac_p=\ac_{O'}+\diff{\vian}{t}\times\vv{O'P}+\vian\times(\vian\times\vv{O'P})\]
+\[\ac_p=\ac_{O'}+\dv{\vian}{t}\times\vv{O'P}+\vian\times(\vian\times\vv{O'P})\]
 
-En utilisant un repère cylindrique on on peut dire que \(\vian\times\vv{O'P}=r\diff{\theta}{t}\utheta\) 
+En utilisant un repère cylindrique on on peut dire que \(\vian\times\vv{O'P}=r\dv{\theta}{t}\utheta\) 
 
 On remarque aussi que \(\vian = \dot{\psi}\uz + \dot{\theta}\nod + \dot{\varphi}\uz'\)
 
@@ -33,8 +33,8 @@ On remarque aussi que \(\vian = \dot{\psi}\uz + \dot{\theta}\nod + \dot{\varphi}
   \item Thm du centre de masse : \( M\ac_G = \F^{\exte} \)
   \item Thm du moment cinétique : 
     \begin{enumerate}
-      \item \(\diff{\mc_O}{t} = \mf_O^{\exte}\) (\(O\) doit être fixe)
-      \item \(\diff{\mc_G}{t} = \mf_G^{\exte}\)
+      \item \(\dv{\mc_O}{t} = \mf_O^{\exte}\) (\(O\) doit être fixe)
+      \item \(\dv{\mc_G}{t} = \mf_G^{\exte}\)
     \end{enumerate} 
   \item Equation de l'énergie : \(\Delta K = W^{\exte}\)
 \end{itemize}
@@ -51,7 +51,7 @@ On remarque aussi que \(\vian = \dot{\psi}\uz + \dot{\theta}\nod + \dot{\varphi}
 \subsubsection{Moment cinétique}
 Valable seulement autour d'un axe de symétrie : 
 \[
-  \diff{\mc_G}{t} = \diff{}{t}(I_{\Delta G}\vian)=\mf^{\exte}_G
+  \dv{\mc_G}{t} = \dv{}{t}(I_{\Delta G}\vian)=\mf^{\exte}_G
 \]
 \subsubsection{Energie cinétique}
 \[
@@ -66,7 +66,7 @@ Théorème de Huygens-Steiner :
   I_{\Delta} = Md^2 + I_{\Delta_G}
 \]
 \[
-  \diff{\mc_O}{t} = \diff{}{t}(I_{\Delta}\vian) = I_{\Delta}\diff{\vian}{t}=\mf_O^{\exte}
+  \dv{\mc_O}{t} = \dv{}{t}(I_{\Delta}\vian) = I_{\Delta}\dv{\vian}{t}=\mf_O^{\exte}
 \]
 
 \textbf{Roulement sans glissement : } vitesse instantané du point de contact est égale à 0, malgré le fait que le point de contact change (+ force de frottement statique).

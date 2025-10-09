@@ -61,19 +61,38 @@
   \end{center}
 }
 
+
+% RACCOURCIS d'ANALYSE ------------------------------------------------
+
+\newcommand{\dx}{ \dd x }
+\newcommand{\dt}{ \dd t }
+\newcommand{\ddt}{\tfrac{\mathrm{d}}{\mathrm{d}t} }
+
 \newcommand{\dee}[1]{
   \,\,\,\mathrm{d}{#1}
 }
 
+% RACCOURCIS de VECTEURS ------------------------------------------------
+
 % \renewcommand{\vv}[1]{\vv{#1}}
 
-\newcommand{\dx}{ \dee x }
-\newcommand{\dt}{ \dee t }
-\newcommand{\ddt}{\tfrac{\mathrm{d}}{\mathrm{d}t} }
+\newcommand{\unit}{\ensuremath{\vv{u}}}
 
-\newcommand{\veca}{\vv{a}}
-\newcommand{\vecb}{\vv{b}}
-\newcommand{\vecc}{\vv{c}}
+\newcommand{\ux}{\ensuremath{\unit_x}}
+\newcommand{\uy}{\ensuremath{\unit_y}}
+\newcommand{\uz}{\ensuremath{\unit_z}}
+
+\newcommand{\ur}{\ensuremath{\vv{u}_{r}}}
+\newcommand{\utheta}{\ensuremath{\vv{u}_{\theta}}}
+\newcommand{\uphi}{\ensuremath{\vv{u}_{\varphi}}}
+\newcommand{\urho}{\ensuremath{\vv{u}_{\rho}}}
+
+\newcommand{\mc}{\ensuremath{\vv{L}}}
+\newcommand{\mf}{\ensuremath{\vv{M}}}
+
+\newcommand{\veca}{\ensuremath{\vv{a}}}
+\newcommand{\vecb}{\ensuremath{\vv{b}}}
+\newcommand{\vecc}{\ensuremath{\vv{c}}}
 
 \newcommand{\F}{\ensuremath{\vv{F}}}
 
@@ -87,19 +106,7 @@
 
 \newcommand{\ac}{\ensuremath{\vv{a}}}
 
-\newcommand{\eva}{\bigg|}
-
-\newcommand{\ux}{\ensuremath{\vv{u}_x}}
-\newcommand{\uy}{\ensuremath{\vv{u}_y}}
-\newcommand{\uz}{\ensuremath{\vv{u}_z}}
-
-\newcommand{\ur}{\ensuremath{\vv{u}_{r}}}
-\newcommand{\utheta}{\ensuremath{\vv{u}_{\theta}}}
-\newcommand{\uphi}{\ensuremath{\vv{u}_{\varphi}}}
-\newcommand{\urho}{\ensuremath{\vv{u}_{\rho}}}
-
-\newcommand{\mc}{\ensuremath{\vv{L}}}
-\newcommand{\mf}{\ensuremath{\vv{M}}}
+\newcommand{\nod}{\vv{n}}
 
 \newcommand{\exte}{\text{ext}}
 \newcommand{\inte}{\text{int}}
@@ -108,7 +115,7 @@
 
 \newcommand{\refe}{\mathcal{R}}
 
-\newcommand{\nod}{\vv{n}}
+% RACCOURCIS DE TRIGO ------------------------------------------------
 
 \newcommand{\eqligne}[3]{\(\displaystyle #2\) & \(\displaystyle #1\) & \(\displaystyle#3\) \\}
 \newcommand{\trigo}[3]{\(\displaystyle #1\) & \(\displaystyle #2\) & \(\displaystyle#3\) \\}
@@ -127,4 +134,3 @@
 
 \newcommand{\lag}{\mathcal{L}}
 
-\graphicspath{{images/}}

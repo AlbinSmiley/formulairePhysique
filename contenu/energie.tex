@@ -40,7 +40,7 @@ Généralisation :
 
 \(P\) est la puissance d'une energie \(E\). 
 \[
-  P = \diff{E}{t} \phantom{textext} \diff{E_m}{t} = \F^{NC}\cdot\vi
+  P = \dv{E}{t} \phantom{textext} \dv{E_m}{t} = \F^{NC}\cdot\vi
 \]
 
 Si \(\F_{NC}\cdot\vi \neq 0 \) l'énergie n'est pas conservé, sinon oui. 
@@ -64,15 +64,15 @@ Possibilité pour la conservation de l'énergie :
 
 \subsection{Méthode pour les position d'équilibres et variations}
 \begin{enumerate}
-  \item \( \sum\F = m\ac = 0 \eva_{x_{eq}} \Leftrightarrow x_{eq} = ... \)
+  \item \( \eval{\sum\F = m\ac = 0 }_{x_{eq}} \Leftrightarrow x_{eq} = ... \)
     \begin{itemize}
-      \item \( \diff{\F}{x}\eva_{x_{eq}} > 0 \rightarrow \) equilibre stable
-      \item \( \diff{\F}{x}\eva_{x_{eq}} < 0 \rightarrow \) equilibre instable
+      \item \( \eval{\dv{\F}{x}}_{x_{eq}} > 0 \rightarrow \) equilibre stable
+      \item \( \eval{\dv{\F}{x}}_{x_{eq}} < 0 \rightarrow \) equilibre instable
     \end{itemize}
-  \item \( \diff{U}{x}\eva_{x_{eq}} = 0  \Leftrightarrow x_{eq} = ... \)
+\item \( \eval{\dv{U}{x}}_{x_{eq}} = 0  \Leftrightarrow x_{eq} = ... \)
     \begin{itemize}
-      \item \( \diff[2]{U}{x}\eva_{x_{eq}} > 0 \rightarrow \) equilibre stable
-      \item \( \diff[2]{U}{x}\eva_{x_{eq}} < 0 \rightarrow \) equilibre instable
+      \item \( \eval{\dv[2]{U}{x}}_{x_{eq}} > 0 \rightarrow \) equilibre stable
+      \item \( \eval{\dv[2]{U}{x}}_{x_{eq}} < 0 \rightarrow \) equilibre instable
     \end{itemize}
       % \item[1.] $\sum\F\cdot\ux = m\ddot{x}\qquad$ dvpt Taylor $1^{er}$ ordre:
       %   \begin{align*}
