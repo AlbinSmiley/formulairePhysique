@@ -19,13 +19,33 @@
 \usepackage[margin=0.5cm]{geometry}
 \usepackage[fontsize=7pt]{fontsize}
 \usepackage[thinc]{esdiff}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usetikzlibrary{arrows.meta}
-\usepackage[tiny]{titlesec}
+\usepackage[tiny,compact,explicit]{titlesec}
+
 \titlespacing{\section}{0pt}{*0.5}{*0.2}
 \titlespacing{\subsection}{0pt}{*1}{*2}
 \titlespacing{\subsubsection}{0pt}{*0.4}{*1}
+
+% \titleformat{\section}
+% {\normalfont\bfseries}
+% {}
+% {1em}
+% % {\colorbox{gray}{\thesection. #1}}
+% {%\pgfsetfillopacity{0.5}
+% \colorbox{gray}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\textcolor{white}{\thesection\quad#1}}}
+% % \pgfsetfillopacity{1}
+% }
+% %[\vspace{-1mm}\rule{\linewidth}{1pt}]
+%
+% \titleformat{\subsection}
+% {\normalfont\bfseries}{\thesubsection. #1}{1em}{}
+%
+% \titleformat{\subsubsection}
+% {\normalfont\bfseries}{\thesubsubsection. #1}{1em}{}
 
 \makeatletter
 \g@addto@macro\normalsize{%
@@ -36,6 +56,8 @@
 }
 \makeatother
 
+% \titleformat{\section}
+% \renewcommand{\section}[1]{\section{{\colorbox{Gray}{#1}}}}
 
 \newcommand{\eqentry}[1]{\(\displaystyle #1\)}
 \pagestyle{empty}
@@ -59,6 +81,10 @@
       \end{tabular}
     }
   \end{center}
+}
+
+\newcommand{\tailler}[1]{
+  \resizebox{\linewidth}{!}{#1}
 }
 
 
