@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761052301.01803 "main.tex" "main.pdf" "main" 1761052301.91958 0
+["pdflatex"] 1763716791.14633 "main.tex" "main.pdf" "main" 1763716792.07612 0
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1742685315 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx0700.tfm" 1742685315 3584 ca0c423beaacd28d53ddce5a826cd558 ""
@@ -185,7 +185,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1750004656 5344726 9231b1a8d0fcacd5bd8126bb5d870112 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1750004606 2117126 4357591111f50d91a3eaa0d1269fdd9b ""
   "contenu/autre.tex" 1759488310.51898 2467 4f24561caa9e067eedf4691c2ebcea7a ""
-  "contenu/cinematique.tex" 1760698677.16175 3063 6e33c304fe0e4fd4020822b503580c48 ""
+  "contenu/cinematique.tex" 1763716789.25795 3137 021a4b262f8189844896895c90000fdf ""
   "contenu/dynamique.tex" 1760016901.77235 2407 76816c8ef84b47f5e2b4fdcf7fdf0b26 ""
   "contenu/energie.tex" 1759488945.23196 3537 bab23d051240151e4dfa8a13ce18dca5 ""
   "contenu/intromath.tex" 1760697907.71531 9347 1336a1ca8f0c68f9dbb0b830b75b314a ""
@@ -194,11 +194,11 @@
   "contenu/preambule.tex" 1761052117.34647 4200 b49ea48c67d1509af08fa45d6579e45e ""
   "contenu/refnonabsolu.tex" 1759488288.29612 1944 73ee220a697c8152ae9880030501a47a ""
   "contenu/solid3d.tex" 1761052259.18004 2668 249461ce9e1621284652a2d9e049008a ""
-  "contenu/solidqcq.tex" 1761052299.1829 2999 ff6ee8a154191eadcd3128c4697a1dc4 ""
+  "contenu/solidqcq.tex" 1761052359.76469 2999 ff6ee8a154191eadcd3128c4697a1dc4 ""
   "images/PHYSIQUEI_1.png" 1758633654.77391 247960 d3d2f074104e5158bbb9fcc46115fc39 ""
   "images/PHYSIQUEI_2.png" 1758633660.00436 284535 633592c01ab935ea1ccd38b10da99eb8 ""
   "images/euler.PNG" 1758633650.24396 400273 2da1100797e89207f69eee5729f9c40c ""
-  "main.aux" 1761052301.85889 5434 6711859875fb7a2c16995acb503f3075 "pdflatex"
+  "main.aux" 1763716792.01394 5434 6711859875fb7a2c16995acb503f3075 "pdflatex"
   "main.tex" 1759251178.885 433 feb70a594420a2b77030feb0b481c64f ""
   (generated)
   "main.aux"
