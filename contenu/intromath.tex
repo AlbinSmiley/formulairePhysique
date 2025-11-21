@@ -31,34 +31,29 @@
   %   \log_a(x)=\frac{\log_b(x)}{\log_b(a)}=\frac{\log(x)}{\log(a)}=\frac{\ln(x)}{\ln(a)}
   % \]
 
-\subsection{Trigo}
+\subsection{Trigonométrie}
+
 \begin{center}
-  \begin{tabular}{cc}
-    \trigod{\cos^2(\alpha) + \sin^2(\alpha) = 1}{ \tan(\alpha)=\frac{\sin(\alpha)}{\cos(\alpha)}=\frac{1}{\cot(\alpha)}}
-    \trigod{ \frac{1}{\cos^2(\alpha)}=1+\tan^2(\alpha)}{ \frac{1}{\sin^2(\alpha)}=1+\cot^2(\alpha)}
+  \begin{tabular}{*{2}{>{\(\displaystyle}c<{\)}}}
+    \cos^2(\alpha) + \sin^2(\alpha) = 1 & \tan(\alpha)=\frac{\sin(\alpha)}{\cos(\alpha)} \\ 
+    \frac{1}{\cos^2(\alpha)}=1+\tan^2(\alpha) & \frac{1}{\sin^2(\alpha)}=1+\cot^2(\alpha)
   \end{tabular}
+
   \vspace{0.1cm}\hrule\vspace{0.1cm}
   \scalebox{0.6}{
-    \begin{tabular}{ccc}
-        % \toprule
-      \trigo{\Cos{\alpha+2\pi}=\Cos{\alpha}}{\Sin{\alpha+2\pi}=\Sin{\alpha}}{\Tan{\alpha+\pi}=\Tan{\alpha}}
-        % \midrule
-      \trigo{\Cos{-\alpha}=\Cos{\alpha}}{\Sin{-\alpha}=-\Sin{\alpha}}{\Tan{-\alpha}=-\Tan{\alpha}}
-      \trigo{\Cos{\pi-\alpha}=-\Cos{\alpha}}{\Sin{\pi-\alpha}=\Sin{\alpha}}{\Tan{\pi-\alpha}=-\Tan{\alpha}}
-      \trigo{\Cos{\pi+\alpha}=-\Cos{\alpha}}{\Sin{\pi+\alpha}=-\Sin{\alpha}}{\Tan{\pi+\alpha}=\Tan{\alpha}}
-      \trigo{\Cos{\frac{\pi}{2}-\alpha}=\Sin{\alpha}}{\Sin{\frac{\pi}{2}-\alpha}=\Cos{\alpha}}{\Tan{\frac{\pi}{2}-\alpha}=\Cot{\alpha}}
-      \trigo{\Cos{\frac{\pi}{2}+\alpha}=-\Sin{\alpha}}{\Sin{\frac{\pi}{2}+\alpha}=\Cos{\alpha}}{\Tan{\frac{\pi}{2}+\alpha}=-\Cot{\alpha}}
-        % \bottomrule
+    \begin{tabular}{*{3}{>{\(\displaystyle}c<{\)}}}
+      {\Cos{\alpha\pm 2\pi}=\Cos{\alpha}} & {\Sin{\alpha\pm 2\pi}=\Sin{\alpha}} & {\Tan{\alpha\pm\pi}=\Tan{\alpha}} \\
+      {\Cos{-\alpha}=\Cos{\alpha}} & {\Sin{-\alpha}=-\Sin{\alpha}} & {\Tan{-\alpha}=-\Tan{\alpha}} \\
+      {\Cos{\pi\pm\alpha}=-\Cos{\alpha}} & {\Sin{\pi\pm\alpha}=\mp\Sin{\alpha}} & {\Tan{\pi\pm\alpha}=\pm\Tan{\alpha}} \\
+      {\Cos{\frac{\pi}{2}\pm\alpha}=\mp\Sin{\alpha}} & {\Sin{\frac{\pi}{2}\pm\alpha}=\Cos{\alpha}} & {\Tan{\frac{\pi}{2}\pm\alpha}=\mp\Cot{\alpha}} \\
     \end{tabular}
   }
   \vspace{0.1cm}\hrule\vspace{0.1cm}
   \scalebox{0.6}{
-    \begin{tabular}{cc}
-        % \toprule
-      \trigod{\Cos{\alpha+\beta}=\Cos{\alpha}\Cos{\beta}-\Sin{\alpha}\Sin{\beta}}{\Cos{\alpha-\beta}=\Cos{\alpha}\Cos{\beta}+\Sin{\alpha}\Sin{\beta}}
-      \trigod{\Sin{\alpha+\beta}=\Sin{\alpha}\Cos{\beta}+\Cos{\alpha}\Sin{\beta}}{\Sin{\alpha-\beta}=\Sin{\alpha}\Cos{\beta}-\Cos{\alpha}\Sin{\beta}}
-      \trigod{\Tan{\alpha+\beta}=\frac{\Tan{\alpha}+\Tan{\beta}}{1-\Tan{\alpha}\Tan{\beta}}}{\Tan{\alpha-\beta}=\frac{\Tan{\alpha}-\Tan{\beta}}{1+\Tan{\alpha}\Tan{\beta}}}
-        % \bottomrule
+    \begin{tabular}{*{1}{>{\(\displaystyle}c<{\)}}}
+      \Cos{\alpha\pm\beta}=\Cos{\alpha}\Cos{\beta}\mp\Sin{\alpha}\Sin{\beta}\\
+      \Sin{\alpha\pm\beta}=\Sin{\alpha}\Cos{\beta}\pm\Cos{\alpha}\Sin{\beta}\\
+      \Tan{\alpha+\beta}=\frac{\Tan{\alpha}+\Tan{\beta}}{1-\Tan{\alpha}\Tan{\beta}}
     \end{tabular}
   }
   % \vspace{0.1cm}\hrule\vspace{0.1cm}
@@ -73,31 +68,17 @@
   % }
   \vspace{0.1cm}\hrule\vspace{0.1cm}
   \scalebox{0.8}{
-    \begin{tabular}{cc}
-        % \toprule
-      \trigod{\Coss{\frac{\alpha}{2}}=\frac{1+\Cos{\alpha}}{2}}{\Sins{\frac{\alpha}{2}}=\frac{1-\Cos{\alpha}}{2}}
-      \trigod{\Tans{\frac{\alpha}{2}}=\frac{1-\Cos{\alpha}}{1+\Cos{\alpha}}}{\Tan{\frac{\alpha}{2}}=\frac{1-\Cos{\alpha}}{\Sin{\alpha}}=\frac{\Sin{\alpha}}{1+\Cos{\alpha}}}
-        % \bottomrule
+    \begin{tabular}{*{2}{>{\(\displaystyle}c<{\)}}}
+      {\Coss{\frac{\alpha}{2}}=\frac{1+\Cos{\alpha}}{2}} & {\Sins{\frac{\alpha}{2}}=\frac{1-\Cos{\alpha}}{2}} \\
+      {\Tans{\frac{\alpha}{2}}=\frac{1-\Cos{\alpha}}{1+\Cos{\alpha}}} & {\Tan{\frac{\alpha}{2}}=\frac{1-\Cos{\alpha}}{\Sin{\alpha}}=\frac{\Sin{\alpha}}{1+\Cos{\alpha}}}
     \end{tabular}
   }
   \vspace{0.1cm}\hrule\vspace{0.1cm}
   \scalebox{0.53}{
-    \begin{tabular}{cc}
-      \trigod{
-        \Cos{\alpha}+\Cos{\beta}=2\Cos{\frac{\alpha+\beta}{2}}\Cos{\frac{\alpha-\beta}{2}}
-      }{
-        \Cos{\alpha}-\Cos{\beta}=-2\Sin{\frac{\alpha+\beta}{2}}\Sin{\frac{\alpha-\beta}{2}}
-      }
-      \trigod{
-        \Sin{\alpha}+\Sin{\beta}=2\Sin{\frac{\alpha+\beta}{2}}\Cos{\frac{\alpha-\beta}{2}}
-      }{
-        \Sin{\alpha}-\Sin{\beta}=2\Cos{\frac{\alpha+\beta}{2}}\Sin{\frac{\alpha-\beta}{2}}
-      }
-      \trigod{
-        \Tan{\alpha}+\Tan{\beta}= \frac{\Sin{\alpha+\beta}}{\Cos{\alpha}\Cos{\beta}}
-      }{
-        \Tan{\alpha}-\Tan{\beta}= \frac{\Sin{\alpha-\beta}}{\Cos{\alpha}\Cos{\beta}}
-      }
+    \begin{tabular}{*{2}{>{\(\displaystyle}c<{\)}}}
+      {\Cos{\alpha}+\Cos{\beta}=2\Cos{\frac{\alpha+\beta}{2}}\Cos{\frac{\alpha-\beta}{2}}} & { \Cos{\alpha}-\Cos{\beta}=-2\Sin{\frac{\alpha+\beta}{2}}\Sin{\frac{\alpha-\beta}{2}} }\\
+      {\Sin{\alpha}+\Sin{\beta}=2\Sin{\frac{\alpha+\beta}{2}}\Cos{\frac{\alpha-\beta}{2}}} & { \Sin{\alpha}-\Sin{\beta}=2\Cos{\frac{\alpha+\beta}{2}}\Sin{\frac{\alpha-\beta}{2}}} \\
+      {\Tan{\alpha}+\Tan{\beta}= \frac{\Sin{\alpha+\beta}}{\Cos{\alpha}\Cos{\beta}}} & { \Tan{\alpha}-\Tan{\beta}= \frac{\Sin{\alpha-\beta}}{\Cos{\alpha}\Cos{\beta}}}
     \end{tabular}
   }
   \vspace{0.1cm}\hrule\vspace{0.1cm}
@@ -139,7 +120,6 @@
 \[
   a^2 = b^2 + c^2 - 2bc\Cos{\alpha}\phantom{text} \frac{a}{\sin(\alpha)}=\frac{b}{\sin(\beta)} 
 \]
-
 
 \renewcommand{\arraystretch}{1}
 
@@ -206,16 +186,17 @@ Projection de \(\vv{b}\) sur \(\ac\) :
   %
   % \(\displaystyle \int \lambda f(x)\dx = \lambda\int f(x)\dx \)
 
-Par parties : 
+Intégration par parties : 
 
-\(\displaystyle \int f'(x)g(x)\dx = f(x)g(x) - \int f(x)g'(x)\dx \)
+% \(\displaystyle \int f'(x)g(x)\dx = f(x)g(x) - \int f(x)g'(x)\dx \)
+\(\displaystyle \int \dot{x}y \dt = xy - \int x\dot{y}\dt \)
 
-Par substitution : 
-\(\displaystyle \int g(f(x))f'(x)\dx = G(x) + c \)
+Intégration par substitution : 
+\(\displaystyle \int \dot{x}f(x) \dt = \int f(x)\dx \)
 
-Par changement de variable (\(x=f(t)\)) : 
-
-\(\displaystyle \int g(x)\dx = \int g(f(t))f'(t) \dt \)
+% Par changement de variable (\(x=f(t)\)) : 
+%
+% \(\displaystyle \int g(x)\dx = \int g(f(t))f'(t) \dt \)
 
 \renewcommand{\arraystretch}{2}
 \begin{center}
