@@ -1,0 +1,27 @@
+  % \section{Solide 2D}
+  % Dans le cas générale, O le point du centre de rotation : 
+  % \[
+  %   \mc_{tot,O}=\sum_i\mc_{m_i}=\sum_i^n I_i\Omega_i + \sum_j^m m_j\vv{OM}_j\times\vi_j
+  % \]
+  %
+  % Avec \(n\) corps solides et \(m\) points materiels. 
+  %
+  % \subsection{Rotation autour d'un axe de symétrie}
+  % \( \mc_G = I_{\Delta G}\vian \) tout le temps valable 
+  % \[
+  %   K = \tfrac{1}{2}Mv_G^2 + \tfrac{1}{2}I_{\Delta G}\omega^2
+  % \]
+  % \(\mc_G\) est parallèle à \(\omega\), \(I_{\Delta G} = \sum_im_i||\vv{GP}_{i\bot}||^2\)
+  %
+  % \subsection{Rotation autour d'un axe instantané fixe \(\Delta\) parallèle à un axe de symétrie}
+  % \[\mc_O=I_{\Delta}\vian\]
+  % \[
+  %   I_{\Delta} = Md^2 + I_{\Delta G} 
+  % \]
+  % \[
+  %   \mc_G = \mc_O + \vv{GO}\times m\vi_O
+  % \]
+  % \[
+  %   K = \tfrac{1}{2}I_{\Delta}\omega^2
+  % \]
+  % \[\mc_O||\vian\]

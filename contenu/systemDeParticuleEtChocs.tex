@@ -1,0 +1,72 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{Système de particules et chocs}
+\subsection{Systèmes de point matiériels}
+Centre de Masse : \(\displaystyle \vv{OG}=\frac{1}{M}\sum_{i}m_i\vv{OP_i}\)
+
+Dans le référentiel du centre de masse (en \textbf{translation} par rapport au référentiel d'inértie) : 
+\[
+  \sum_{i}m_i\vv{GP_i} = 0 \phantom{text} \sum_{i}m_i\vv{v_i}' = 0 
+\]
+\[ \phantom{text} K = \tfrac{1}{2}M\vv{v}_G^2 + \sum_{i}\tfrac{1}{2}m_i\vv{v_i}'^2 \]
+
+Théorème du centre de masse : \(\displaystyle M\ac_G = \F^{\exte} \)
+
+Théorème du moment cinétique : \(\displaystyle\dv{\mc_O}{t} = \mf_O^{\exte}\)
+
+Principe de conservations : 
+\[
+  \Qm^{in}=\Qm^{fin} \phantom{texttext}
+  \mc^{in}_O=\mc^{fin}_O
+\]
+
+\subsection{Chocs}
+\[ \Delta K \overset{?}{=}
+  \begin{cases}
+    0 = \implies \text{choc élastique}\\
+    0 \neq \implies \text{choc inélastique}
+  \end{cases}
+\]
+
+Il y a \textbf{choc mou} lorsque les deux masses se collent. La conservation de la quantité de mouvement est vérifié mais \(\Delta K \neq 0\).
+
+\subsubsection{Choc 1-D, élastique}
+\[
+  \begin{cases}
+    m_1 v_{1i} + m_2v_{2i} = m_1 v_{1f} + m_2 v_{2f} \\ 
+    \tfrac{1}{2}m_1 v_{1i}^2 + \tfrac{1}{2}m_1 v_{2f}^2 - \tfrac{1}{2}m_1 v_{1f}^2 = 0
+  \end{cases}
+\]
+
+Ce système a pour solutions :
+\[
+  \begin{cases}
+    v_{1f} = \frac{(m_1-m_2)v_{1i} + 2m_2v_{2i}}{m_1+m_2} \\
+    v_{2f} = \frac{(m_2-m_1)v_{2i} + 2m_1v_{1i}}{m_1+m_2}
+  \end{cases}
+\]
+
+\subsubsection{Choc inélastique}
+\[
+  \Delta K 
+  \begin{cases}
+    > 0 \implies \text{exo-énergetique} \\
+    < 0 \implies \text{endo-énergetique}
+  \end{cases}
+\]
+
+\subsubsection{Choc mou (parfaitement inélastique)}
+Les deux objet se collent (\(\vi_{1f}=\vi_{2f}=\vi_{\text{mou}}\)). Dans le cas particulier ou \(\vi_{2i}=0\), la conservation de la quantité de mouvement nous dit que : 
+\[
+  m_1\vi_{1i} = m_1\vi_{1f} + m_2\vi_{2f} = (m_1 + m_2)\vi_{\text{mou}} 
+\]
+\[
+  \vi_{\text{mou}} = \frac{m_1}{m_1 + m_2}\vi_{1i}
+\]
+\[
+  \Delta K = K^{\text{fin}} - K^{\text{in}}= -\tfrac{1}{2}\frac{m_1m_2}{m_1+m_2}v_{\text{mou}}^2 < 0 
+\]
+
+\end{document}
+
